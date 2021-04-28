@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+    <title> Google | Map </title>
+
+    <style>
+        * {
+            margin: 10;
+            padding: 10;
+        }
+
+        .mapdiv {
+            height: 100vh;
+            display: grid;
+            place-items: right;
+            background-color: #f1f2f5;
+        }
+
+        #map {
+            border: 1px solid lightgray;
+            height: 100%;
+            width: 100%;
+            /* border-radius: 15px; */
+            /* box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.75); */
+        }
+
+        .fixedPos {
+            position: fixed;
+            top: 150px;
+            right: 150px;
+        }
+
+        .row {
+            display: flex;
+            box-shadow: none;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #c3c3c3;
+            background: rgba(255, 255, 255, 0.918);
+        }
+        #enteredCity{
+            margin-right: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 4px;
+        }
+        #findButton {
+            color: rgb(211, 199, 199);
+            font-size: 15px;
+            background-color: rgba(6, 133, 252, 0.891);
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mapdiv">
+        <div id="map"></div>
+        <div class="row fixedPos">
+            <input type="text" id="enteredCity" />
+            <button id="findButton">Locate City</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=ABt2HE9BI544yi4AoAjUN9AQVJrwHnYB"></script>
+    <script
+        src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=ABt2HE9BI544yi4AoAjUN9AQVJrwHnYB"></script>
+    <script src="map.js"> </script>
+</body>
+
+</html>
