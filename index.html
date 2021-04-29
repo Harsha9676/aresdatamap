@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title> Google | Map </title>
 
     <style>
@@ -48,8 +50,8 @@
             padding: 4px;
         }
         #findButton {
-            color: rgb(211, 199, 199);
-            font-size: 15px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
             background-color: rgba(6, 133, 252, 0.891);
             border: none;
             border-radius: 5px;
@@ -63,9 +65,9 @@
 
     <div class="mapdiv">
         <div id="map"></div>
-        <div class="row fixedPos">
+        <div class="row fixedPos" action="action_page.php">
             <input type="text" id="enteredCity" />
-            <button id="findButton">Locate City</button>
+            <button id="findButton"><i class="fa fa-search"></i></button>
         </div>
     </div>
 
